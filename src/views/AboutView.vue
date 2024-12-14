@@ -5,7 +5,7 @@
 
 <template>
   <div>
-    <h1>About there</h1>
+    <h1>About Massive barbecue</h1>
   </div>
 </template>
 

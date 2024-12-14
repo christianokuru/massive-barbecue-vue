@@ -1,11 +1,13 @@
 <script setup>
-
+import Banner from '@/components/custom/Banner.vue';
+import Menu from '@/components/custom/Menu.vue';
 </script>
 
 
 <template>
   <div>
-    <h1 class="text-blue-700">home there and there</h1>
+    <Banner />
+    <Menu />
   </div>
 </template>
 

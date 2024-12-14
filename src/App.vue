@@ -1,14 +1,14 @@
 <script setup>
-import HomeView from '@/views/HomeView.vue'
+import Navbar from './components/custom/Navbar.vue';
+import Footer from './components/custom/Footer.vue';
 </script>
-
 
 <template>
   <div>
-    <home-view />
+    <navbar />
+    <router-view />
+    <Footer />
+    <!-- Render the active route's component -->
+
   </div>
 </template>
-
-
-
-
