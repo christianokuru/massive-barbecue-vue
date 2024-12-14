@@ -1,4 +1,3 @@
-<!-- src/components/Modal.vue -->
 <script setup>
 import { defineProps, defineEmits } from 'vue';
 import Button from '../ui/button/Button.vue';
@@ -27,6 +26,11 @@ const closeOnOutsideClick = (event) => {
     closeModal();
   }
 };
+
+
+const whatsappNumber = '2348102569891'; 
+const message = `Hello, I would like to order ${props.selectedItem?.name || 'item'} .`; 
+const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 </script>
 
 <template>
@@ -37,7 +41,7 @@ const closeOnOutsideClick = (event) => {
   >
     <div class="bg-white rounded-lg p-6 max-w-md w-full" @click.stop>
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-xl font-semibold text-[#D84315]">{{ selectedItem.name }}</h2>
+        <h2 class="text-xl font-semibold text-[#D84315]">{{ selectedItem?.name || 'Item' }}</h2>
         <button
           @click="closeModal"
           class="text-[#5D4037] hover:text-gray-700"
@@ -48,12 +52,12 @@ const closeOnOutsideClick = (event) => {
           </svg>
         </button>
       </div>
-      <img :src="selectedItem.image" :alt="selectedItem.name" class="w-full h-48 object-cover mb-4 rounded-md" />
+      <img :src="selectedItem?.image" :alt="selectedItem?.name" class="w-full h-48 object-cover mb-4 rounded-md" />
       <div class="space-y-4">
-        <p><strong>Description:</strong> {{ selectedItem.description }}</p>
+        <p><strong>Description:</strong> {{ selectedItem?.description || 'No description available' }}</p>
         <p><strong>Available Options:</strong></p>
         <ul>
-          <li v-for="(price, index) in selectedItem.prices" :key="index">
+          <li v-for="(price, index) in selectedItem?.prices || []" :key="index">
             <div class="flex justify-between space-y-2">
                 <div class="text-xl">
                 <h1>{{ price.name }}</h1>
@@ -62,19 +66,19 @@ const closeOnOutsideClick = (event) => {
                 <h1>₦{{ price.price }}</h1>
             </div>
             </div>
-            <!-- <span>{{ price.name }}: ₦{{ price.price }}</span> -->
           </li>
         </ul>
       </div>
       <div class="pt-5">
-        <Button>Order Now</Button>
+        <a :href="whatsappLink" target="_blank">
+          <Button>Order Now</Button>
+        </a>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-/* Optional styling */
 .modal-content {
   max-width: 600px;
   width: 100%;

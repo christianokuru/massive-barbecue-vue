@@ -23,7 +23,6 @@ const menuItems = [
     prices: [
       { name: "Regular", price: 8000 },
       { name: "Standard", price: 15000 },
-      { name: "Large", price: 5000 },
     ],
     description: "Succulent turkey, expertly seasoned and grilled to a golden brown, offering a rich, smoky flavor that’s perfect for any special occasion or casual meal."
   },
