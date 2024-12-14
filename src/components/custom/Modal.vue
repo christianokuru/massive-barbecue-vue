@@ -98,7 +98,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
           </div>
           <div class="pt-5 animate-slide-up">
             <a :href="whatsappLink" target="_blank">
-              <Button>Order Now</Button>
+              <Button class="bg-[#D84315] font-semibold">Order Now</Button>
             </a>
           </div>
         </div>
