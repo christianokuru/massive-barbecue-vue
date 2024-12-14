@@ -29,7 +29,7 @@ const closeOnOutsideClick = (event) => {
 
 
 const whatsappNumber = '2348102569891'; 
-const message = `Hello, I would like to order ${props.selectedItem?.name || 'item'} .`; 
+const message = `Hello, I'm coming from your website and I would love to make an order. 😊`; 
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 </script>
 
