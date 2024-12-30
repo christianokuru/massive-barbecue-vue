@@ -38,33 +38,40 @@ const generateWhatsAppLink = (item) => {
     </div>
 
     <!-- Menu Items -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:px-20">
       <div
         v-for="item in store.theMenuItems"
         :key="item.id"
-        class="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden"
+        class="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden sm:px-4 sm:py-3 md:px-0 md:py-4 md:pt-0 border border-border cursor-pointer hover:shadow-2xl"
+        @click="openModal(item)"
       >
         <!-- Image -->
         <div class="relative">
           <img
             :src="item.image"
             :alt="item.name"
-            class="w-full h-48 object-cover"
+            class="w-full h-32 sm:h-36 md:h-40 object-cover cursor-pointer hidden sm:block rounded-md"
+            @click="openModal(item)"
+          />
+          <img
+            :src="item.image"
+            :alt="item.name"
+            class="w-full h-32 sm:h-36 md:h-40 object-cover sm:hidden"
           />
           <!-- Order Now Button on Mobile -->
           <a
             :href="generateWhatsAppLink(item)"
             target="_blank"
-            class="sm:hidden absolute bottom-2 right-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            class="sm:hidden absolute bottom-2 right-2 bg-[#D84315] text-white font-semibold px-4 py-2 rounded hover:bg-[#ff6f43]"
           >
             Order Now
           </a>
         </div>
 
         <!-- Content -->
-        <div class="p-4 flex flex-col justify-between flex-1">
+        <div class="flex flex-col justify-between flex-1 p-3 space-y-2">
           <!-- Title -->
-          <h2 class="text-xl font-semibold text-gray-800">{{ item.name }}</h2>
+          <h2 class="text-lg sm:text-xl font-semibold text-gray-800">{{ item.name }}</h2>
 
           <!-- Description -->
           <p class="text-gray-600 text-sm mt-2 sm:hidden">
@@ -72,12 +79,6 @@ const generateWhatsAppLink = (item) => {
           </p>
           <p class="text-gray-600 text-sm mt-2 hidden sm:block">
             {{ item.description.substring(0, 50) }}...
-            <button
-              @click="openModal(item)"
-              class="text-blue-500 hover:underline ml-2"
-            >
-              See more
-            </button>
           </p>
 
           <!-- Prices -->
@@ -100,7 +101,7 @@ const generateWhatsAppLink = (item) => {
     <!-- Modal -->
     <div
       v-if="isModalOpen"
-      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
       @click.self="closeModal"
     >
       <div
@@ -134,14 +135,14 @@ const generateWhatsAppLink = (item) => {
         <div class="mt-4 flex justify-between items-center">
           <button
             @click="closeModal"
-            class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400"
+            class="bg-white border text-gray-700 px-4 py-2 rounded hover:bg-gray-400"
           >
             Close
           </button>
           <a
             :href="generateWhatsAppLink(selectedItem)"
             target="_blank"
-            class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            class="bg-[#D84315] text-white font-semibold px-4 py-2 rounded hover:bg-[#cb5937]"
           >
             Order Now
           </a>
