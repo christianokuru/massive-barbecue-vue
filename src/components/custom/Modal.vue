@@ -1,6 +1,6 @@
 <script setup>
-import { defineProps, defineEmits } from 'vue';
-import Button from '../ui/button/Button.vue';
+import { defineProps, defineEmits } from "vue";
+import Button from "../ui/button/Button.vue";
 
 const props = defineProps({
   isOpen: {
@@ -13,11 +13,11 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(['close']);
+const emit = defineEmits(["close"]);
 
 // Close modal handler
 const closeModal = () => {
-  emit('close');
+  emit("close");
 };
 
 // Close modal if clicked outside of modal content
@@ -27,9 +27,11 @@ const closeOnOutsideClick = (event) => {
   }
 };
 
-const whatsappNumber = '2348102569891';
+const whatsappNumber = "2348102569891";
 const message = `TEST: [Hello, I'm coming from your website and I would love to make an order. 😊]`;
-const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+  message
+)}`;
 </script>
 
 <template>
@@ -42,9 +44,9 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       <transition name="content-scale">
         <div class="bg-white rounded-lg p-6 max-w-md w-full" @click.stop>
           <div class="flex justify-between items-center mb-4">
-            <h2
-              class="text-xl font-semibold text-[#D84315] animate-fade-in"
-            >{{ selectedItem?.name || 'Item' }}</h2>
+            <h2 class="text-xl font-semibold text-[#D84315] animate-fade-in">
+              {{ selectedItem?.name || "Item" }}
+            </h2>
             <button
               @click="closeModal"
               class="text-[#5D4037] hover:text-gray-700"
@@ -76,7 +78,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
           <div class="space-y-4">
             <p class="animate-slide-up text-[#5D4037]">
               <strong>Description:</strong>
-              {{ selectedItem?.description || 'No description available' }}
+              {{ selectedItem?.description || "No description available" }}
             </p>
             <p><strong class="text-[#5D4037]">Available Options:</strong></p>
             <ul>
