@@ -32,15 +32,6 @@ const router = createRouter({
       },
     },
     {
-      path: '/gallery',
-      name: 'gallery',
-      component: () => import('../views/GalleryView.vue'),
-      meta: {
-        title: 'Massive Barbecue - Gallery',
-        description: 'View photos of our delicious dishes and cozy restaurant ambiance.',
-      },
-    },
-    {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue'),

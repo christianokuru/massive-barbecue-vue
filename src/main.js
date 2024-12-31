@@ -9,12 +9,20 @@ import { addIcons, OhVueIcon } from 'oh-vue-icons'
 import {
     BiArrowUpCircleFill,
     BiArrowUpCircle,
+    FaUserFriends,
+    FaAward,
+    FaRegularClock,
+    MdFamilyrestroom,
 } from 'oh-vue-icons/icons'
 
 
 addIcons(
     BiArrowUpCircleFill,
     BiArrowUpCircle,
+    FaUserFriends,
+    FaAward,
+    FaRegularClock,
+    MdFamilyrestroom,
 )
 
 
