@@ -35,19 +35,20 @@ const features = ref([
     description: "Three generations of BBQ expertise",
   },
 ]);
+
 </script>
 
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="relative h-[500px] flex items-center justify-center">
-      <div
-        class="absolute inset-0 bg-black/60 z-10"
-        :style="heroBackground"
-      />
+    <section
+      class="relative h-[210px] md:h-[500px] flex items-center justify-center"
+      :style="heroBackground"
+    >
+      <div class="absolute inset-0 bg-black/60 z-10"></div>
       <div class="relative z-20 text-center px-4">
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
-          Crafting Perfect barbecue Since 2020
+          Crafting Perfect Barbecue Since 2020
         </h1>
         <p class="text-xl text-gray-200 max-w-2xl mx-auto">
           Where passion meets flavor in every perfectly smoked piece
@@ -56,7 +57,7 @@ const features = ref([
     </section>
 
     <!-- Story Section -->
-    <section class="py-20 px-4 bg-[#FDF8F3]">
+    <section class="pt-10 pb-10 px-4 bg-[#FDF8F3]">
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
