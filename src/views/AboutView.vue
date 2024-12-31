@@ -2,6 +2,8 @@
 import { ref } from "vue";
 import { useMenuStore } from "@/stores/menu";
 import hero from '@/assets/images/aboutHero.png';
+import nice from '@/assets/images/nice.jpg';
+
 
 const store = useMenuStore();
 
@@ -61,7 +63,7 @@ const features = ref([
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 class="text-3xl font-bold mb-6 text-[#2C1810]">Our Story</h2>
+            <h2 class="text-3xl font-bold mb-10 text-[#2C1810]">Our Story</h2>
             <p class="text-lg text-[#5C3D2E] mb-6">
               Started in a small backyard with a single smoker and a dream, our
               journey began with a simple mission: to serve the most flavorful,
@@ -86,12 +88,12 @@ const features = ref([
           </div>
           <div class="relative">
             <img
-              :src="store.image"
+              :src="nice"
               alt="Master BBQ chef at work"
-              class="rounded-lg shadow-xl"
+              class="rounded-lg shadow-xl w-full md:h-96 object-cover"
             />
             <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-              <p class="text-4xl font-bold text-[#D35400]">25+</p>
+              <p class="text-4xl font-bold text-[#D35400]">5+</p>
               <p class="text-[#5C3D2E]">Years of Excellence</p>
             </div>
           </div>
@@ -150,15 +152,15 @@ const features = ref([
     <section class="py-20 px-4 bg-[#FDF8F3]">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-6 text-[#2C1810]">
-          Come Experience Our BBQ
+          Come Experience Our Barbecue
         </h2>
         <p class="text-lg text-[#5C3D2E] mb-8">
           Join us for an unforgettable dining experience. Whether it's a family dinner,
-          special occasion, or catering event, we're here to serve you the best BBQ in
-          town.
+          special occasion, or catering event, we're here to serve you the best Barbecue in
+          Lagos.
         </p>
         <button
-          class="bg-[#D35400] hover:bg-[#A04000] text-white text-lg px-8 py-6 rounded"
+          class="bg-[#D35400] hover:bg-[#A04000] text-white font-semibold text-lg px-4 py-5 cursor-pointer rounded-xl animate-bounce mt-3"
         >
           Place an Order
         </button>
