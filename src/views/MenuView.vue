@@ -23,7 +23,7 @@ const closeModal = () => {
 // Generate WhatsApp message link
 const generateWhatsAppLink = (item) => {
   const message = `Hello! I would like to order "${item.name}". Can you please assist me?`;
-  return `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/2348102569891?text=${encodeURIComponent(message)}`;
 };
 </script>
 
@@ -38,11 +38,13 @@ const generateWhatsAppLink = (item) => {
     </div>
 
     <!-- Menu Items -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:px-20">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:px-20"
+    >
       <div
         v-for="item in store.theMenuItems"
         :key="item.id"
-        class="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden sm:px-4 sm:py-3 md:px-0 md:py-4 md:pt-0 border border-border cursor-pointer hover:shadow-2xl"
+        class="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden border border-border cursor-pointer hover:shadow-2xl"
         @click="openModal(item)"
       >
         <!-- Image -->
@@ -50,13 +52,7 @@ const generateWhatsAppLink = (item) => {
           <img
             :src="item.image"
             :alt="item.name"
-            class="w-full h-32 sm:h-36 md:h-40 object-cover cursor-pointer hidden sm:block rounded-md"
-            @click="openModal(item)"
-          />
-          <img
-            :src="item.image"
-            :alt="item.name"
-            class="w-full h-32 sm:h-36 md:h-40 object-cover sm:hidden"
+            class="w-full h-36 object-cover rounded-t-lg"
           />
           <!-- Order Now Button on Mobile -->
           <a
@@ -69,24 +65,23 @@ const generateWhatsAppLink = (item) => {
         </div>
 
         <!-- Content -->
-        <div class="flex flex-col justify-between flex-1 p-3 space-y-2">
+        <div class="p-4 flex flex-col flex-1">
           <!-- Title -->
-          <h2 class="text-lg sm:text-xl font-semibold text-gray-800">{{ item.name }}</h2>
+          <h2 class="text-lg font-semibold text-gray-800 mb-1">
+            {{ item.name }}
+          </h2>
 
           <!-- Description -->
-          <p class="text-gray-600 text-sm mt-2 sm:hidden">
-            {{ item.description }}
-          </p>
-          <p class="text-gray-600 text-sm mt-2 hidden sm:block">
+          <p class="text-gray-600 text-sm flex-1">
             {{ item.description.substring(0, 50) }}...
           </p>
 
           <!-- Prices -->
-          <ul class="mt-4 space-y-2">
+          <ul class="mt-4">
             <li
               v-for="price in item.prices"
               :key="price.name"
-              class="flex justify-between text-gray-700"
+              class="flex justify-between text-gray-700 text-sm space-y-1"
             >
               <span>{{ price.name }}</span>
               <span class="font-semibold"
@@ -104,19 +99,17 @@ const generateWhatsAppLink = (item) => {
       class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
       @click.self="closeModal"
     >
-      <div
-        class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative"
-      >
+      <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative">
         <button
           @click="closeModal"
-          class="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+          class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 font-semibold text-2xl"
         >
-          &times;
+          x
         </button>
         <img
           :src="selectedItem.image"
           :alt="selectedItem.name"
-          class="w-full h-48 object-cover rounded-lg"
+          class="w-full h-48 object-cover rounded-lg mt-7"
         />
         <h2 class="text-2xl font-bold mt-4">{{ selectedItem.name }}</h2>
         <p class="text-gray-700 mt-2">{{ selectedItem.description }}</p>
