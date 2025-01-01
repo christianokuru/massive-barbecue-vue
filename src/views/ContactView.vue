@@ -58,7 +58,7 @@ const handleSubmit = async (e: Event) => {
 
 <template>
   <div class=" flex items-center justify-center p-4">
-    <Card class="w-full max-w-md bg-input text-black border-stone-400 border-x-4 shadow-xl">
+    <Card class="w-full max-w-md bg-input text-black border-stone-300 shadow-xl">
       <CardHeader>
         <CardTitle class="text-2xl font-bold text-center">Contact Us</CardTitle>
       </CardHeader>
@@ -95,7 +95,7 @@ const handleSubmit = async (e: Event) => {
 
           <Button
             type="submit"
-            class="w-full bg-orange-600 hover:bg-orange-500 text-white font-semibold"
+            class="w-full bg-[#D84315] hover:bg-[#ff6e42] text-white font-semibold"
             :disabled="isLoading"
           >
             {{ isLoading ? "Sending..." : "Send Message" }}
@@ -109,7 +109,7 @@ const handleSubmit = async (e: Event) => {
       <div
         v-for="toast in toasts"
         :key="toast.id"
-        class="p-4 bg-orange-800 text-white rounded-md shadow-lg"
+        class="p-4 bg-green-500 text-white rounded-md shadow-lg"
       >
         <strong>{{ toast.title }}</strong>
         <p>{{ toast.description }}</p>
