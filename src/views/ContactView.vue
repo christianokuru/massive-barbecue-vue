@@ -58,20 +58,20 @@ const handleSubmit = async (e: Event) => {
 
 <template>
   <div class=" flex items-center justify-center p-4">
-    <Card class="w-full max-w-md bg-input text-black border-stone-300 shadow-xl">
+    <Card class="w-full max-w-md bg-input text-[#212121] border-stone-300 shadow-xl">
       <CardHeader>
-        <CardTitle class="text-2xl font-bold text-center">Contact Us</CardTitle>
+        <CardTitle class="text-2xl font-bold text-[#212121] text-center">Contact Us</CardTitle>
       </CardHeader>
       <CardContent>
         <form @submit="handleSubmit" class="space-y-6">
           <div class="space-y-2">
-            <Label for="email" class="text-black font-semibold">Email</Label>
+            <Label for="email" class="text-[#212121] font-semibold">Email</Label>
             <Input
               id="email"
               name="email"
               type="email"
               placeholder="massivebarbeque@gmail.com"
-              class="bg-card border-border text-black placeholder:text-stone-400"
+              class="bg-card border-border text-[#212121] placeholder:text-[#5D4039]"
               :disabled="isLoading"
             />
             <p v-if="errors.email" class="text-red-700 text-sm">
@@ -80,12 +80,12 @@ const handleSubmit = async (e: Event) => {
           </div>
 
           <div class="space-y-2">
-            <Label for="message" class="text-black font-semibold">Message</Label>
+            <Label for="message" class="text-[#212121] font-semibold">Message</Label>
             <Textarea
               id="message"
               name="message"
               placeholder="Tell us about your Barbecue needs..."
-              class="bg-card border-border text-black placeholder:text-stone-400 min-h-[120px]"
+              class="bg-card border-border text-[#212121] placeholder:text-[#5D4039] min-h-[120px]"
               :disabled="isLoading"
             />
             <p v-if="errors.message" class="text-red-700 text-sm">
