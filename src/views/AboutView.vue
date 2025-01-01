@@ -1,9 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import { useMenuStore } from "@/stores/menu";
-import hero from '@/assets/images/aboutHero.png';
-import nice from '@/assets/images/nice.jpg';
-
+import hero from "@/assets/images/aboutHero.png";
+import nice from "@/assets/images/nice.jpg";
 
 const store = useMenuStore();
 
@@ -14,30 +13,29 @@ const heroBackground = ref({
   backgroundBlendMode: "overlay",
 });
 
-
 const features = ref([
   {
-    icon: 'fa-user-friends',
+    icon: "fa-user-friends",
     title: "Expert Chefs",
     description: "Skilled pitmasters with years of experience",
   },
   {
-    icon: 'fa-award',
+    icon: "fa-award",
     title: "Quality First",
     description: "Premium cuts and fresh ingredients",
   },
   {
-    icon: 'fa-regular-clock',
+    icon: "fa-regular-clock",
     title: "Slow-Cooked",
     description: "Patiently smoked for perfect flavor",
   },
   {
-    icon: 'md-familyrestroom',
-    title: "Family Owned",
-    description: "Three generations of BBQ expertise",
+    icon: "md-familyrestroom",
+    title: "Healthy Company Culture",
+    description:
+      "Supportive, inclusive, empowering, collaborative, respectful.",
   },
 ]);
-
 </script>
 
 <template>
@@ -65,10 +63,10 @@ const features = ref([
           <div>
             <h2 class="text-3xl font-bold mb-10 text-[#2C1810]">Our Story</h2>
             <p class="text-lg text-[#5C3D2E] mb-6">
-              Started in a small backyard with a single smoker and a dream, our
-              journey began with a simple mission: to serve the most flavorful,
-              tender barbecue in town. Today, we've grown into a beloved
-              establishment, but our commitment to quality remains unchanged.
+              Started very small with a table, grill or smoker stand in Ayobo.
+              We had the passion for affordable quality and did just that.
+              Sooner than later, we converted into a kitchen, running orders for
+              our customers.
             </p>
             <p class="text-lg text-[#5C3D2E] mb-6">
               Every piece of meat is carefully selected, seasoned with our
@@ -76,14 +74,17 @@ const features = ref([
               traditional methods passed down through generations.
             </p>
             <div class="flex gap-4 mt-8">
-              <button class="bg-[#D35400] hover:bg-[#A04000] text-white px-4 py-2 rounded">
+              <button
+                class="bg-[#D35400] hover:bg-[#A04000] text-white px-4 py-2 rounded"
+              >
                 Our Location
               </button>
-              <button
+              <router-link
+              to="/contact"
                 class="border-[#D35400] border text-[#D35400] hover:bg-[#D35400] hover:text-white px-4 py-2 rounded"
               >
                 Contact Us
-              </button>
+              </router-link>
             </div>
           </div>
           <div class="relative">
@@ -92,8 +93,10 @@ const features = ref([
               alt="Master BBQ chef at work"
               class="rounded-lg shadow-xl w-full md:h-96 object-cover"
             />
-            <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-              <p class="text-4xl font-bold text-[#D35400]">5+</p>
+            <div
+              class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg"
+            >
+              <p class="text-4xl font-bold text-[#D35400]">3+</p>
               <p class="text-[#5C3D2E]">Years of Excellence</p>
             </div>
           </div>
@@ -138,8 +141,10 @@ const features = ref([
             :key="index"
             class="text-center"
           >
-            <div class="bg-[#D35400] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-               <v-icon :name="feature.icon" class="w-8 h-8 text-white" />
+            <div
+              class="bg-[#D35400] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <v-icon :name="feature.icon" class="w-8 h-8 text-white" />
             </div>
             <h3 class="font-bold text-xl mb-2">{{ feature.title }}</h3>
             <p class="text-gray-300">{{ feature.description }}</p>
@@ -155,15 +160,16 @@ const features = ref([
           Come Experience Our Barbecue
         </h2>
         <p class="text-lg text-[#5C3D2E] mb-8">
-          Join us for an unforgettable dining experience. Whether it's a family dinner,
-          special occasion, or catering event, we're here to serve you the best Barbecue in
-          Lagos.
+          Join us for an unforgettable dining experience. Whether it's a family
+          dinner, special occasion, or catering event, we're here to serve you
+          the best Barbecue in Lagos.
         </p>
-        <button
+        <RouterLink
+          to="/menu"
           class="bg-[#D35400] hover:bg-[#A04000] text-white font-semibold text-lg px-4 py-5 cursor-pointer rounded-xl animate-bounce mt-3"
         >
           Place an Order
-        </button>
+        </RouterLink>
       </div>
     </section>
   </div>

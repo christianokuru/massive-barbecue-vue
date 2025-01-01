@@ -12,12 +12,11 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Menu", href: "/menu" },
   { name: "About Us", href: "/about" },
-  { name: "Gallery", href: "/gallery" },
   { name: "Contact Us", href: "/contact" },
 ];
 
 const officeAddress = "47 Ferguson Osagie Rd, Dangote, off Alaja Rd, Megida, Ayobo, Lagos";
-const phoneNumber = "+1 234 567 890";
+const phoneNumber = "+234 810 25 698 91";
 const email = "massivebarbeque@gmail.com";
 const socialLinks = [
   { name: "Facebook", href: "https://www.facebook.com/profile.php?id=100083405384043" },
