@@ -57,7 +57,7 @@ const handleSubmit = async (e: Event) => {
 </script>
 
 <template>
-  <div class=" flex items-center justify-center p-4">
+  <div class="h-screen flex items-center justify-center p-4">
     <Card class="w-full max-w-md bg-input text-[#212121] border-stone-300 shadow-xl">
       <CardHeader>
         <CardTitle class="text-2xl font-bold text-[#212121] text-center">Contact Us</CardTitle>
