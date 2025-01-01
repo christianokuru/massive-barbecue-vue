@@ -18,6 +18,7 @@
     "oh-vue-icons": "^1.0.0-rc3",
     "pinia": "^2.3.0",
     "radix-vue": "^1.9.10",
+    "swiper": "^11.1.15",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vee-validate": "^4.14.7",
