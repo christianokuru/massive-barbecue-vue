@@ -2,6 +2,7 @@
 import Banner from '@/components/custom/Banner.vue';
 import Menu from '@/components/custom/Menu.vue';
 import Testimonial from '@/components/custom/Testimonial.vue';
+import FastDelivery from '@/components/custom/FastDelivery.vue';
 </script>
 
 
@@ -10,6 +11,7 @@ import Testimonial from '@/components/custom/Testimonial.vue';
     <Banner />
     <Menu />
     <Testimonial />
+    <fast-delivery />
   </div>
 </template>
 
