@@ -14,7 +14,7 @@ export const useMenuStore = defineStore("theMenu", () => {
   const theMenuItems = reactive([
     {
       id: 1,
-      name: "Barbecue Chicken",
+      name: "Barbeque Chicken",
       image: chicken1,
       prices: [
         { name: "Regular", price: 5000 },
@@ -22,7 +22,7 @@ export const useMenuStore = defineStore("theMenu", () => {
         { name: "Family", price: 17500 },
       ],
       description:
-        "Tender, juicy chicken marinated in a blend of smoky barbecue sauce and herbs, then grilled to perfection. A savory treat that packs all the flavor you crave.",
+        "Tender, juicy chicken marinated in a blend of smoky Barbeque sauce and herbs, then grilled to perfection. A savory treat that packs all the flavor you crave.",
     },
     {
       id: 2,

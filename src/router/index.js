@@ -9,8 +9,8 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
       meta: {
-        title: 'Massive Barbecue - Home',
-        description: 'Welcome to Massive Barbecue. Explore our delicious barbecue menu, gallery, and more.',
+        title: 'Massive Barbeque - Home',
+        description: 'Welcome to Massive Barbeque. Explore our delicious Barbeque menu, gallery, and more.',
       },
     },
     {
@@ -18,8 +18,8 @@ const router = createRouter({
       name: 'about',
       component: () => import('../views/AboutView.vue'),
       meta: {
-        title: 'Massive Barbecue - About Us',
-        description: 'Learn more about Massive Barbecue, our story, and our commitment to great food.',
+        title: 'Massive Barbeque - About Us',
+        description: 'Learn more about Massive Barbeque, our story, and our commitment to great food.',
       },
     },
     {
@@ -27,8 +27,8 @@ const router = createRouter({
       name: 'menu',
       component: () => import('../views/MenuView.vue'),
       meta: {
-        title: 'Massive Barbecue - Menu',
-        description: 'Check out our mouth-watering barbecue menu. Something for everyone!',
+        title: 'Massive Barbeque - Menu',
+        description: 'Check out our mouth-watering Barbeque menu. Something for everyone!',
       },
     },
     {
@@ -36,7 +36,7 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
       meta: {
-        title: 'Massive Barbecue - Contact Us',
+        title: 'Massive Barbeque - Contact Us',
         description: 'Get in touch with us for bookings, inquiries, or feedback.',
       },
     },
@@ -45,8 +45,8 @@ const router = createRouter({
 
 // Update document metadata dynamically
 router.beforeEach((to, from, next) => {
-  const defaultTitle = 'Massive Barbecue';
-  const defaultDescription = 'Welcome to Massive Barbecue. Savor the best barbecue in town!';
+  const defaultTitle = 'Massive Barbeque';
+  const defaultDescription = 'Welcome to Massive Barbeque. Savor the best Barbeque in town!';
   
   // Update document title
   document.title = to.meta?.title || defaultTitle;

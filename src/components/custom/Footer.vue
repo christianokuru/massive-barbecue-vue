@@ -103,7 +103,7 @@ const socialLinks = [
       <!-- Footer Bottom Section (Copyright) -->
       <div class="text-center mt-8">
         <p class="text-sm">
-          &copy; {{ new Date().getFullYear() }} Massive Barbecue. All rights
+          &copy; {{ new Date().getFullYear() }} Massive Barbeque. All rights
           reserved.
         </p>
       </div>

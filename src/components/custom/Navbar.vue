@@ -26,7 +26,7 @@ const isSheetOpen = ref(false);
     >
       <!-- Logo -->
       <router-link to="/" class="flex items-center">
-        <img :src="logo" alt="massive-barbecue-logo" class="w-16" />
+        <img :src="logo" alt="massive-Barbeque-logo" class="w-16" />
       </router-link>
 
       <!-- Desktop and Tablet Links -->
