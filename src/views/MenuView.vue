@@ -28,6 +28,17 @@ const generateWhatsAppLink = (item) => {
 </script>
 
 <template>
+  <!-- Meta Tags for SEO -->
+  <head>
+    <meta name="description" content="Explore our delicious menu filled with premium Barbeque items, fresh meals, and a variety of flavors. Order now and taste the perfection of our offerings!" />
+    <meta name="keywords" content="BBQ, grilled chicken, tender fish, premium BBQ, order food, delicious meals, massive barbeque, juicy chicken, barbeque lagos, lagos barbeque, barbeque chicken, barbeque turkey, bole, fried rice, spaghetti, barbeque croaker, croaker fish, catfish, barbeque catfish" />
+    <meta property="og:title" content="Our Menu - BBQ Delights" />
+    <meta property="og:description" content="Discover the best BBQ in town with our mouthwatering menu. Order now and indulge in smoky, flavorful grilled dishes." />
+    <meta property="og:image" content="/src/assets/images/Foods/turkeyss.webp" />
+    <meta name="twitter:title" content="Our Menu - Massive Barbeque Delights" />
+    <meta name="twitter:description" content="Taste the best BBQ with our carefully crafted menu. Order now and enjoy premium BBQ dishes." />
+  </head>
+
   <main class="p-4 space-y-6">
     <!-- Menu Header -->
     <div class="text-center">
