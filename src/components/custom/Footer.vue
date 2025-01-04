@@ -38,7 +38,7 @@ const socialLinks = [
 
         <!-- Navigation Links -->
         <div>
-          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <h1 class="text-xl font-semibold mb-4">Quick Links</h1>
           <ul>
             <li v-for="(link, index) in navLinks" :key="index" class="mb-2">
               <router-link
