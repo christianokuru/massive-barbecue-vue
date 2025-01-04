@@ -1,8 +1,8 @@
-import chicken1 from '@/assets/images/Foods/chick.jpg';
-import croaker from '@/assets/images/Foods/croak.jpg';
+import chicken1 from '@/assets/images/Foods/mainChicken.webp';
+import croaker from '@/assets/images/Foods/croak.webp';
 import turkey from '@/assets/images/Foods/turkeyss.webp'; 
-import catfish from '@/assets/images/Foods/catfish.jpg'; 
-import mullet from '@/assets/images/Foods/croaker.jpg';
+import catfish from '@/assets/images/Foods/catfish.webp'; 
+import mullet from '@/assets/images/Foods/croaker.webp';
 
 const menuItems = [
   {

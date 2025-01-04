@@ -1,14 +1,14 @@
 import { defineStore } from "pinia";
 import { reactive } from "vue";
-import chicken1 from "@/assets/images/Foods/chick.jpg";
-import croaker from "@/assets/images/Foods/croak.jpg";
+import chicken1 from "@/assets/images/Foods/mainChicken.webp";
+import croaker from "@/assets/images/Foods/croak.webp";
 import turkey from "@/assets/images/Foods/turkeyss.webp";
-import catfish from "@/assets/images/Foods/catfish.jpg";
-import mullet from "@/assets/images/Foods/croaker.jpg";
-import boli from "@/assets/images/Foods/boli1.jpg";
-import spag1 from "@/assets/images/Foods/spag1.jpg";
-import anotherSpag from "@/assets/images/Foods/2.png";
-import chickenAndChips from "@/assets/images/Foods/chickenAndChips.jpg";
+import catfish from "@/assets/images/Foods/catfish.webp";
+import mullet from "@/assets/images/Foods/croaker.webp";
+import boli from "@/assets/images/Foods/boli1.webp";
+import spag1 from "@/assets/images/Foods/spag1.webp";
+import anotherSpag from "@/assets/images/Foods/2.webp";
+import chickenAndChips from "@/assets/images/Foods/chickenAndChips.webp";
 
 export const useMenuStore = defineStore("theMenu", () => {
   const theMenuItems = reactive([
