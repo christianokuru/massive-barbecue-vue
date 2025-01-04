@@ -54,7 +54,7 @@ const closeModal = () => {
         to="/menu"
         class="inline-block bg-[#212121] text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-[#636363] transition"
       >
-        See More
+        Go to our Menu
       </router-link>
     </div>
 
