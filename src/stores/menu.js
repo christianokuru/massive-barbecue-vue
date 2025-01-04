@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import { reactive } from "vue";
 import chicken1 from "@/assets/images/Foods/chick.jpg";
 import croaker from "@/assets/images/Foods/croak.jpg";
-import turkey from "@/assets/images/Foods/turkey.jpg";
+import turkey from "@/assets/images/Foods/turkeyss.webp";
 import catfish from "@/assets/images/Foods/catfish.jpg";
 import mullet from "@/assets/images/Foods/croaker.jpg";
 import boli from "@/assets/images/Foods/boli1.jpg";
