@@ -1,5 +1,5 @@
 <script setup>
-import fastDelivery from "@/assets/images/fastDelivery.png";
+import fastDelivery from "@/assets/images/fastDelivery.webp";
 </script>
 
 <template>
