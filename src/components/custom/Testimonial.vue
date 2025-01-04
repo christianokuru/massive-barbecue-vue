@@ -41,7 +41,7 @@ const slidesPerView = computed(() => {
         <div class="card-container">
           <Card class="testimonial-card ">
             <div class="card-body">
-              <h3 class="text-lg font-semibold">{{ testimonial.name }}</h3>
+              <h1 class="text-lg font-semibold">{{ testimonial.name }}</h1>
               <p class="review">{{ testimonial.review }}</p>
               <div class="footer">
                 <span class="date">{{ testimonial.date }}</span>
