@@ -1,5 +1,5 @@
 <script setup>
-import heroSmall from '@/assets/images/homeBannersmall.webp';
+import heroSmall from '@/assets/images/homeBannerSmall.webp';
 import heroMedium from '@/assets/images/homeBannerMeduim.webp';
 import heroLarge from '@/assets/images/homeBanner.webp';
 
