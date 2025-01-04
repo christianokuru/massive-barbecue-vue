@@ -53,7 +53,7 @@ const socialLinks = [
 
         <!-- Contact Information -->
         <div>
-          <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+          <h1 class="text-xl font-semibold mb-4">Contact Us</h1>
           <p>
             Phone:
             <a :href="'tel:' + phoneNumber" class="hover:text-yellow-400">{{
@@ -70,7 +70,7 @@ const socialLinks = [
 
         <!-- Social Links -->
         <div>
-          <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+          <h1 class="text-xl font-semibold mb-4">Follow Us</h1>
           <ul>
             <li
               v-for="(social, index) in socialLinks"
