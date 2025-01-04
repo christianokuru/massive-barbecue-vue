@@ -16,7 +16,6 @@ const whatsappLink = `https://wa.me/${whatsappNumber}`;
       sizes="(max-width: 768px) 480px, (max-width: 1200px) 768px, 1200px"
       alt="Delicious BBQ Banner"
       class="w-full h-[400px] md:h-[600px] object-cover"
-      loading="lazy"
     />
   
     <!-- Text Overlay -->
