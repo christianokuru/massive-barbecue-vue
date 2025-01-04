@@ -8,7 +8,7 @@ import fastDelivery from "@/assets/images/fastDelivery.png";
     <div class="md:hidden text-center space-y-4">
       <h1 class="text-2xl font-semibold">Fast Delivery</h1>
       <p class="text-base text-gray-600">Experience lightning-fast delivery service tailored to your needs!</p>
-      <img :src="fastDelivery" alt="Fast Delivery" class="w-full h-auto rounded-lg shadow-md" />
+      <img :src="fastDelivery" alt="Fast Delivery" class="w-full h-auto rounded-lg shadow-md" loading="lazy" />
     </div>
 
     <!-- Tablet/Desktop Layout -->
@@ -28,6 +28,7 @@ import fastDelivery from "@/assets/images/fastDelivery.png";
         :src="fastDelivery" 
         alt="Fast Delivery" 
         class="flex-1 w-1/2 h-auto rounded-lg shadow-md object-cover"
+        loading="lazy"
       />
     </div>
   </section>

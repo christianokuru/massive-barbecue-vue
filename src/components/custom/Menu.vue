@@ -35,7 +35,13 @@ const closeModal = () => {
         class="bg-white shadow-lg rounded-lg overflow-hidden border cursor-pointer"
         @click="openModal(item)"
       >
-        <img :src="item.image" :alt="item.name" class="w-full h-48 object-cover" />
+        <!-- Lazy Loaded Image -->
+        <img 
+          :src="item.image" 
+          :alt="item.name" 
+          class="w-full h-48 object-cover" 
+          loading="lazy" 
+        />
         <div class="p-4">
           <h3 class="text-lg font-bold text-gray-800">{{ item.name }}</h3>
         </div>
