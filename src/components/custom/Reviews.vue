@@ -49,7 +49,7 @@ const submitReview = () => {
       ></textarea>
       <button
         @click="submitReview"
-        class="w-full px-4 py-2 text-white bg-orange-500 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+        class="w-full px-4 py-2 text-white font-semibold bg-[#212121] rounded-md hover:bg-stone-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
       >
         Submit Review
       </button>
