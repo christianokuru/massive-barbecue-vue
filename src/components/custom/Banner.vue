@@ -1,5 +1,5 @@
 <script setup>
-import hero from '@/assets/images/banner.jpg';
+import hero from '@/assets/images/homeBanner.webp';
 
 const whatsappNumber = '2348102569891';
 const whatsappLink = `https://wa.me/${whatsappNumber}`;
